@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Rohan Gurung</title>
+    <meta name="description" content="Professional summary, skills, and work experience of Rohan Gurung.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-group h3 {
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            font-size: 1.2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skill-tag {
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0, 210, 255, 0.2);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-color);
+            border: 3px solid var(--primary-color);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            color: var(--text-main);
+            margin-bottom: 0.2rem;
+        }
+
+        .timeline-company {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .timeline-content li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+        
+        .education-card {
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <nav>
+                <div class="logo"><span class="gradient-text">RG.</span></div>
+                <button class="hamburger" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding container" style="margin-top: 80px;">
+            <h1 class="section-title gradient-text">Professional Profile</h1>
+            
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <h2>Professional Summary</h2>
+                    <br>
+                    <p>Results-driven Digital Marketing Specialist with 4+ years of cross-functional experience in graphic design, SEO, social media strategy, and digital campaign management. I have a proven track record of building brand identities and executing data-driven digital marketing initiatives across diverse industries.</p>
+                    <p>I am proficient with industry-leading tools including Adobe Creative Suite, Figma, and SEO/ad management platforms. Currently pursuing a BCA degree, combining academic knowledge with real-world marketing expertise.</p>
+                </div>
+
+                <div class="education-card">
+                    <h2 style="margin-bottom: 1rem;">Education</h2>
+                    <h3 style="color: var(--text-main);">Bachelor of Computer Applications (BCA)</h3>
+                    <p style="color: var(--text-muted);">Tribhuvan University | 2022 – Present</p>
+                </div>
+
+                <div class="skills-section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-group">
+                            <h3>Digital Marketing</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SEO & SEM</span>
+                                <span class="skill-tag">Social Media Marketing</span>
+                                <span class="skill-tag">Content Strategy</span>
+                                <span class="skill-tag">Email Marketing</span>
+                                <span class="skill-tag">Google Ads</span>
+                                <span class="skill-tag">Facebook Ads Manager</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h3>Design Tools</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Adobe Photoshop</span>
+                                <span class="skill-tag">Adobe Illustrator</span>
+                                <span class="skill-tag">Adobe InDesign</span>
+                                <span class="skill-tag">Figma</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Video & Motion</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Adobe After Effects</span>
+                                <span class="skill-tag">Adobe Premiere Pro</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Web & UX</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Web Design</span>
+                                <span class="skill-tag">UX Research</span>
+                                <span class="skill-tag">Wireframing</span>
+                                <span class="skill-tag">Prototyping</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Analytics & SEO</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SEMrush</span>
+                                <span class="skill-tag">Ahrefs</span>
+                                <span class="skill-tag">Google Search Console</span>
+                                <span class="skill-tag">Google Analytics</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Photography</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Commercial Photography</span>
+                                <span class="skill-tag">Photo Retouching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-section" style="margin-top: 2rem;">
+                    <h2 style="margin-bottom: 3rem; text-align: center;">Work Experience</h2>
+                    
+                    <div class="timeline">
+                        <!-- Experience 1 -->
+                        <div class="timeline-item">
+                            <span class="timeline-date">Jun 2025 – Feb 2026</span>
+                            <h3 class="timeline-title">Digital Marketing Specialist</h3>
+                            <h4 class="timeline-company">Binary Burst Solutions (Promoted from Graphic Designer)</h4>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Planned and executed digital marketing campaigns across social media, search, and display channels.</li>
+                                    <li>Managed SEO strategies including keyword research, on-page optimization, and performance tracking using SEO tools.</li>
+                                    <li>Ran and optimized paid ad campaigns via Google Ads and Facebook Ads Manager to maximize ROI.</li>
+                                    <li>Analyzed campaign performance data and produced reports to guide strategy and improve engagement metrics.</li>
+                                    <li>Coordinated with design and development teams to ensure brand consistency across all digital touchpoints.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="timeline-item">
+                            <span class="timeline-date">May 2025 – Jun 2025</span>
+                            <h3 class="timeline-title">Graphic Designer</h3>
+                            <h4 class="timeline-company">Binary Burst Solutions</h4>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Designed brand identity assets, social media creatives, and marketing collateral for client campaigns.</li>
+                                    <li>Created UI/UX mockups in Figma to support web development and digital product teams.</li>
+                                    <li>Rapidly promoted to Digital Marketing Specialist based on performance and initiative.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="timeline-item">
+                            <span class="timeline-date">Nov 2024 – Apr 2025</span>
+                            <h3 class="timeline-title">Graphic Designer</h3>
+                            <h4 class="timeline-company">Sewaverse</h4>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Developed brand assets, social media posts, and promotional materials aligned with marketing objectives.</li>
+                                    <li>Assisted in planning and executing digital marketing campaigns to grow online audience and engagement.</li>
+                                    <li>Created motion graphics and short video content using Adobe After Effects and Premiere Pro.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience 4 -->
+                        <div class="timeline-item">
+                            <span class="timeline-date">Jan 2023 – Sep 2024</span>
+                            <h3 class="timeline-title">Creative Designer</h3>
+                            <h4 class="timeline-company">Outlaw Esports</h4>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Managed social media presence and community engagement strategies, growing the brand's online following.</li>
+                                    <li>Designed promotional graphics, event banners, and sponsorship decks to attract brand partnerships.</li>
+                                    <li>Produced video content and highlight reels for YouTube and social media channels.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience 5 -->
+                        <div class="timeline-item">
+                            <span class="timeline-date">Dec 2021 – Dec 2022</span>
+                            <h3 class="timeline-title">Creative Team Member</h3>
+                            <h4 class="timeline-company">Youth Thinkers' Society</h4>
+                            <div class="timeline-content">
+                                <ul>
+                                    <li>Designed promotional materials and event creatives for youth-focused campaigns and events.</li>
+                                    <li>Supported digital outreach efforts through visual storytelling and social media graphics.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rohan Gurung. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

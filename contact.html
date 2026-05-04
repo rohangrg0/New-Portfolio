@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rohan Gurung</title>
+    <meta name="description" content="Contact Rohan Gurung for collaborations and inquiries.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .info-item:hover {
+            border-color: var(--primary-color);
+            transform: translateX(10px);
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .info-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: var(--text-main);
+        }
+
+        .info-details p, .info-details a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <nav>
+                <div class="logo"><span class="gradient-text">RG.</span></div>
+                <button class="hamburger" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding container" style="margin-top: 80px;">
+            <h1 class="section-title gradient-text">Let's Connect</h1>
+            
+            <div class="contact-container fade-in">
+                <div class="contact-info">
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        I'm currently available for freelance work and full-time opportunities. Feel free to reach out for collaborations or just a friendly hello!
+                    </p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h3>Location</h3>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <a href="mailto:grgrohan004@gmail.com">grgrohan004@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+9779745361898">+977-9745361898</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">💼</div>
+                        <div class="info-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/rohan-gurung-it" target="_blank">linkedin.com/in/rohan-gurung-it</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! This is a demo form.');">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rohan Gurung. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

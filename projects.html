@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Rohan Gurung</title>
+    <meta name="description" content="View the portfolio and projects of Rohan Gurung.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--surface-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 210, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-image {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-category {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <nav>
+                <div class="logo"><span class="gradient-text">RG.</span></div>
+                <button class="hamburger" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding container" style="margin-top: 80px;">
+            <h1 class="section-title gradient-text">Featured Projects</h1>
+            
+            <div class="card-grid fade-in">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="assets/images/ejn.jpg" alt="E-Commerce App Redesign" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">UI/UX Design</span>
+                        <h3 class="project-title">E-Commerce App Redesign</h3>
+                        <p class="project-desc">A complete UI/UX overhaul for a modern e-commerce platform, focusing on user retention and streamlined checkout flows.</p>
+                        <div class="project-links">
+                            <a href="#" class="gradient-text">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="assets/images/jordans1.jpg" alt="Social Media Growth Campaign" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Digital Marketing</span>
+                        <h3 class="project-title">Social Media Growth Campaign</h3>
+                        <p class="project-desc">A strategic campaign that increased brand awareness and organic reach by 150% over three months.</p>
+                        <div class="project-links">
+                            <a href="#" class="gradient-text">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="assets/images/raw.jpg" alt="Corporate Portfolio Website" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">Corporate Portfolio Website</h3>
+                        <p class="project-desc">A responsive, fast-loading portfolio website built with HTML, CSS, and modern JavaScript techniques.</p>
+                        <div class="project-links">
+                            <a href="#" class="gradient-text">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rohan Gurung. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
