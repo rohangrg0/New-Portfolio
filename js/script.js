@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
+
             // Toggle hamburger icon
             if (navLinks.classList.contains('active')) {
                 hamburger.innerHTML = '✕';
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set active nav link based on current page
     const currentPath = window.location.pathname;
     const navItems = document.querySelectorAll('.nav-links a');
-    
+
     navItems.forEach(link => {
         const href = link.getAttribute('href');
         if (currentPath.endsWith(href) || (currentPath.endsWith('/') && href === 'index.html')) {

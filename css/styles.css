@@ -1,16 +1,16 @@
 :root {
   /* Color Palette */
-  --bg-color: #0b0f19;
-  --surface-color: #1a1f2e;
-  --primary-color: #00d2ff;
-  --secondary-color: #3a7bd5;
-  --text-main: #f0f6fc;
-  --text-muted: #8b949e;
-  --accent-color: #ff007a;
-  
+  --bg-color: #f8fafc;
+  --surface-color: #ffffff;
+  --primary-color: #0284c7;
+  --secondary-color: #4f46e5;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent-color: #e11d48;
+
   /* Typography */
-  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
+
   /* Utilities */
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --border-radius: 12px;
@@ -41,13 +41,20 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.2;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -66,10 +73,10 @@ header {
   top: 0;
   width: 100%;
   padding: 1.5rem 0;
-  background: rgba(11, 15, 25, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 nav {
@@ -95,13 +102,17 @@ nav {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   transition: var(--transition);
 }
 
@@ -131,7 +142,11 @@ nav {
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   color: #fff;
   box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
 }
@@ -203,7 +218,10 @@ nav {
   background: var(--surface-color);
   border-radius: var(--border-radius);
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
   transition: var(--transition);
 }
 
@@ -233,7 +251,7 @@ footer {
   text-align: center;
   padding: 2rem 0;
   background: var(--surface-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .social-links {
@@ -276,7 +294,7 @@ footer {
   width: 100%;
   padding: 1rem;
   background: var(--surface-color);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   color: var(--text-main);
   font-family: var(--font-family);
@@ -299,7 +317,9 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .fade-in.visible {
@@ -319,7 +339,7 @@ footer {
     flex-direction: column;
     padding: 2rem;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.active {
@@ -333,7 +353,7 @@ footer {
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   .btn {
     width: 100%;
     text-align: center;
