@@ -45,10 +45,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Apply animation classes to elements
-    const animateElements = document.querySelectorAll('.card, .section-title, .hero-content');
-    animateElements.forEach(el => {
-        el.classList.add('fade-in');
+    // First, observe elements that already have the fade-in class
+    const preExistingFadeElements = document.querySelectorAll('.fade-in');
+    preExistingFadeElements.forEach(el => {
         observer.observe(el);
     });
+
+    // Also apply animation classes to specific elements and observe them
+    const animateElements = document.querySelectorAll('.card, .section-title, .hero-content');
+    animateElements.forEach(el => {
+        if (!el.classList.contains('fade-in')) {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        }
+    });
+
+    // Lightbox Functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (lightbox && lightboxImg && closeBtn) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                lightbox.style.display = 'block';
+                lightboxImg.src = item.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
 });

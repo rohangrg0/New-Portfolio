@@ -96,17 +96,27 @@
 
     <main>
         <section class="section-padding container" style="margin-top: 80px;">
-            <h1 class="section-title gradient-text">Featured Projects</h1>
+            <h1 class="section-title gradient-text">Full Image Gallery</h1>
+            <div class="gallery-grid fade-in">
+                <img src="assets/images/ejn.jpg" alt="Gallery Image 1" class="gallery-item">
+                <img src="assets/images/ejn2.jpg" alt="Gallery Image 2" class="gallery-item">
+                <img src="assets/images/jordans1.jpg" alt="Gallery Image 3" class="gallery-item">
+                <img src="assets/images/raw.jpg" alt="Gallery Image 4" class="gallery-item">
+            </div>
+        </section>
+
+        <section class="section-padding container">
+            <h2 class="section-title gradient-text">Featured Projects</h2>
 
             <div class="card-grid fade-in">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="assets/images/ejn.jpg" alt="E-Commerce App Redesign" class="project-image">
+                    <img src="assets/images/ejn.jpg" alt="Brand Identity Design" class="project-image">
                     <div class="project-info">
-                        <span class="project-category">UI/UX Design</span>
-                        <h3 class="project-title">E-Commerce App Redesign</h3>
-                        <p class="project-desc">A complete UI/UX overhaul for a modern e-commerce platform, focusing on
-                            user retention and streamlined checkout flows.</p>
+                        <span class="project-category">Graphic Design</span>
+                        <h3 class="project-title">Brand Identity Design</h3>
+                        <p class="project-desc">Creation of cohesive brand identity assets, logos, and marketing
+                            collateral for client campaigns.</p>
                         <div class="project-links">
                             <a href="#" class="gradient-text">View Details →</a>
                         </div>
@@ -115,33 +125,53 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="assets/images/jordans1.jpg" alt="Social Media Growth Campaign" class="project-image">
+                    <img src="assets/images/ejn2.jpg" alt="Social Media Creatives" class="project-image">
                     <div class="project-info">
-                        <span class="project-category">Digital Marketing</span>
-                        <h3 class="project-title">Social Media Growth Campaign</h3>
-                        <p class="project-desc">A strategic campaign that increased brand awareness and organic reach by
-                            150% over three months.</p>
+                        <span class="project-category">Graphic Design</span>
+                        <h3 class="project-title">Social Media Creatives</h3>
+                        <p class="project-desc">High-engagement visual content designed specifically for Instagram,
+                            Facebook, and LinkedIn marketing campaigns.</p>
                         <div class="project-links">
-                            <a href="#" class="gradient-text">View Case Study →</a>
+                            <a href="#" class="gradient-text">View Details →</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="assets/images/raw.jpg" alt="Corporate Portfolio Website" class="project-image">
+                    <img src="assets/images/jordans1.jpg" alt="Promotional Event Graphics" class="project-image">
                     <div class="project-info">
-                        <span class="project-category">Web Development</span>
-                        <h3 class="project-title">Corporate Portfolio Website</h3>
-                        <p class="project-desc">A responsive, fast-loading portfolio website built with HTML, CSS, and
-                            modern JavaScript techniques.</p>
+                        <span class="project-category">Graphic Design</span>
+                        <h3 class="project-title">Promotional Event Graphics</h3>
+                        <p class="project-desc">Eye-catching event banners, sponsorship decks, and promotional materials
+                            designed to attract brand partnerships.</p>
                         <div class="project-links">
-                            <a href="#" class="gradient-text">Live Demo →</a>
+                            <a href="#" class="gradient-text">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="assets/images/raw.jpg" alt="Commercial Photography" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Photography & Retouching</span>
+                        <h3 class="project-title">Commercial Photography</h3>
+                        <p class="project-desc">Professional product photography and advanced photo retouching using
+                            Adobe Photoshop and Lightroom.</p>
+                        <div class="project-links">
+                            <a href="#" class="gradient-text">View Details →</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
     </main>
 
     <footer>
